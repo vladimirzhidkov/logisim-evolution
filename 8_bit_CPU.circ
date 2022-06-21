@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.4.1" version="1.0">
-  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+<project source="3.7.2" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="11"/>
       <a name="incoming" val="11"/>
-    </tool>
-    <tool name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </tool>
-    <tool name="Probe">
-      <a name="appearance" val="NewPins"/>
     </tool>
     <tool name="Tunnel">
       <a name="facing" val="south"/>
@@ -29,109 +23,21 @@
       <a name="type" val="n"/>
     </tool>
   </lib>
-  <lib desc="#Gates" name="1">
-    <tool name="PLA">
-      <a name="table" val=""/>
-    </tool>
-  </lib>
-  <lib desc="#Plexers" name="2">
-    <tool name="Multiplexer">
-      <a name="enable" val="false"/>
-    </tool>
-    <tool name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </tool>
-  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4">
-    <tool name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="T Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="J-K Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="S-R Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Counter">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Shift Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Random">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="RAM">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="ROM">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 8 8
-0
-</a>
-    </tool>
-  </lib>
+  <lib desc="#Memory" name="4"/>
   <lib desc="#I/O" name="5"/>
   <lib desc="#TTL" name="6"/>
-  <lib desc="#TCL" name="7">
-    <tool name="TclGeneric">
-      <a name="content">library ieee;
-use ieee.std_logic_1164.all;
-
-entity TCL_Generic is
-  port(
-    --Insert input ports below
-    horloge_i  : in  std_logic;                    -- input bit example
-    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
-
-	  --Insert output ports below
-    max_o      : out std_logic;                    -- output bit example
-    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
-  );
-end TCL_Generic;
-</a>
-    </tool>
-  </lib>
+  <lib desc="#TCL" name="7"/>
   <lib desc="#Base" name="8">
     <tool name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="text" val=""/>
-      <a name="valign" val="base"/>
     </tool>
   </lib>
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
-  <lib desc="#Soc" name="11">
-    <tool name="Rv32im">
-      <a name="SocBusSelection" val=""/>
-    </tool>
-    <tool name="Nios2">
-      <a name="SocBusSelection" val=""/>
-    </tool>
-    <tool name="SocBus">
-      <a name="SocBusIdentifier" val="0x000001782882C35F64310bb7"/>
-    </tool>
-    <tool name="Socmem">
-      <a name="SocBusSelection" val=""/>
-    </tool>
-    <tool name="SocPio">
-      <a name="SocBusSelection" val=""/>
-    </tool>
-    <tool name="SocVga">
-      <a name="SocBusSelection" val=""/>
-    </tool>
-    <tool name="SocJtagUart">
-      <a name="SocBusSelection" val=""/>
-    </tool>
-  </lib>
+  <lib desc="#Soc" name="11"/>
   <main name="SR_latch_active_low"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -149,16 +55,10 @@ end TCL_Generic;
     <tool lib="8" name="Wiring Tool"/>
     <tool lib="8" name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="text" val=""/>
-      <a name="valign" val="base"/>
     </tool>
     <sep/>
+    <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </tool>
-    <tool lib="0" name="Pin">
-      <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
@@ -170,26 +70,21 @@ end TCL_Generic;
     <tool lib="1" name="NAND Gate"/>
     <tool lib="1" name="NOR Gate"/>
     <sep/>
-    <tool lib="4" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool lib="4" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
   </toolbar>
   <circuit name="NOT_gate">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="NOT_gate"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(130,120)" name="Transistor">
       <a name="facing" val="south"/>
+      <a name="selloc" val="bl"/>
     </comp>
     <comp lib="0" loc="(130,140)" name="Transistor">
       <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
       <a name="type" val="n"/>
     </comp>
     <comp lib="0" loc="(130,200)" name="Ground"/>
@@ -221,10 +116,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="NAND_gate"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(140,230)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
@@ -273,7 +164,6 @@ end TCL_Generic;
     <comp lib="0" loc="(540,290)" name="Ground"/>
     <comp lib="0" loc="(560,150)" name="Transistor">
       <a name="facing" val="south"/>
-      <a name="gate" val="br"/>
     </comp>
     <comp lib="0" loc="(590,130)" name="Tunnel">
       <a name="label" val="B"/>
@@ -304,8 +194,9 @@ end TCL_Generic;
     <wire from="(180,320)" to="(180,330)"/>
     <wire from="(180,90)" to="(180,100)"/>
     <wire from="(200,140)" to="(200,180)"/>
-    <wire from="(200,180)" to="(200,230)"/>
+    <wire from="(200,180)" to="(200,200)"/>
     <wire from="(200,180)" to="(260,180)"/>
+    <wire from="(200,200)" to="(200,230)"/>
     <wire from="(480,220)" to="(490,220)"/>
     <wire from="(480,260)" to="(490,260)"/>
     <wire from="(490,130)" to="(490,220)"/>
@@ -333,10 +224,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="NOR_gate"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(140,170)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
@@ -395,16 +282,8 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="SR_latch_active_low"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
+    <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="127" y="77"/>
-      <circ-port height="10" pin="540,220" width="10" x="125" y="135"/>
-      <circ-port height="10" pin="540,90" width="10" x="125" y="75"/>
-      <circ-port height="8" pin="80,240" width="8" x="56" y="136"/>
-      <circ-port height="8" pin="80,70" width="8" x="56" y="76"/>
       <polyline fill="none" points="60,110 129,110" stroke="#000000" stroke-width="2"/>
       <rect fill="none" height="120" stroke="#000000" stroke-width="2" width="70" x="60" y="50"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="117" y="140">!Q</text>
@@ -412,6 +291,11 @@ end TCL_Generic;
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="140">R</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="80">S</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="61">active low</text>
+      <circ-anchor facing="east" height="6" width="6" x="127" y="77"/>
+      <circ-port height="10" pin="540,220" width="10" x="125" y="135"/>
+      <circ-port height="10" pin="540,90" width="10" x="125" y="75"/>
+      <circ-port height="8" pin="80,240" width="8" x="56" y="136"/>
+      <circ-port height="8" pin="80,70" width="8" x="56" y="76"/>
     </appear>
     <comp lib="0" loc="(540,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -458,10 +342,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="D_flip_flop_rising_edge"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(60,330)" name="Clock"/>
     <comp lib="0" loc="(70,100)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -537,20 +417,16 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="MEM_1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="57"/>
-      <circ-port height="10" pin="610,100" width="10" x="115" y="55"/>
-      <circ-port height="8" pin="150,180" width="8" x="66" y="86"/>
-      <circ-port height="8" pin="150,80" width="8" x="66" y="56"/>
       <rect fill="none" height="50" stroke="#000000" stroke-width="2" width="50" x="70" y="50"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="111" y="64">o</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="78" y="64">i</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="78" y="93">s</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="75">MEM 1</text>
+      <circ-anchor facing="east" height="6" width="6" x="117" y="57"/>
+      <circ-port height="10" pin="610,100" width="10" x="115" y="55"/>
+      <circ-port height="8" pin="150,180" width="8" x="66" y="86"/>
+      <circ-port height="8" pin="150,80" width="8" x="66" y="56"/>
     </appear>
     <comp lib="0" loc="(150,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -589,21 +465,17 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="MEM_8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
-      <circ-port height="10" pin="730,70" width="10" x="105" y="55"/>
-      <circ-port height="8" pin="310,490" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="370,80" width="8" x="46" y="56"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="60" x="50" y="40"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="103" y="64">o</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="55" y="84">s</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="56" y="64">i</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="79" y="84">8</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="70">MEM</text>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
+      <circ-port height="10" pin="730,70" width="10" x="105" y="55"/>
+      <circ-port height="8" pin="310,490" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="370,80" width="8" x="46" y="56"/>
     </appear>
     <comp lib="0" loc="(310,490)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -698,17 +570,7 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="REGISTER_8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
-      <circ-port height="10" pin="320,100" width="10" x="135" y="75"/>
-      <circ-port height="10" pin="320,130" width="10" x="115" y="35"/>
-      <circ-port height="8" pin="150,130" width="8" x="76" y="36"/>
-      <circ-port height="8" pin="150,160" width="8" x="76" y="116"/>
-      <circ-port height="8" pin="150,190" width="8" x="116" y="116"/>
       <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="80" x="60" y="40"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="133" y="83">value</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="137" y="56">output</text>
@@ -716,6 +578,12 @@ end TCL_Generic;
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="71" y="110">set</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="99" y="110">enable</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="79">REG</text>
+      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
+      <circ-port height="10" pin="320,100" width="10" x="135" y="75"/>
+      <circ-port height="10" pin="320,130" width="10" x="115" y="35"/>
+      <circ-port height="8" pin="150,130" width="8" x="76" y="36"/>
+      <circ-port height="8" pin="150,160" width="8" x="76" y="116"/>
+      <circ-port height="8" pin="150,190" width="8" x="116" y="116"/>
     </appear>
     <comp lib="0" loc="(150,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -771,17 +639,7 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="REG_ACCUMULATOR"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="77"/>
-      <circ-port height="10" pin="250,100" width="10" x="175" y="105"/>
-      <circ-port height="10" pin="250,40" width="10" x="15" y="45"/>
-      <circ-port height="8" pin="150,160" width="8" x="176" y="46"/>
-      <circ-port height="8" pin="150,190" width="8" x="176" y="76"/>
-      <circ-port height="8" pin="150,40" width="8" x="96" y="36"/>
       <rect fill="none" height="80" stroke="#000000" stroke-width="2" width="160" x="20" y="40"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="49">input</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="152" y="80">enable</text>
@@ -789,6 +647,12 @@ end TCL_Generic;
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="47" y="49">output</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="142" y="108">value</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="30" y="85">ACCUMULATOR</text>
+      <circ-anchor facing="east" height="6" width="6" x="177" y="77"/>
+      <circ-port height="10" pin="250,100" width="10" x="175" y="105"/>
+      <circ-port height="10" pin="250,40" width="10" x="15" y="45"/>
+      <circ-port height="8" pin="150,160" width="8" x="176" y="46"/>
+      <circ-port height="8" pin="150,190" width="8" x="176" y="76"/>
+      <circ-port height="8" pin="150,40" width="8" x="96" y="36"/>
     </appear>
     <comp lib="0" loc="(150,160)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -835,20 +699,16 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="REG_TMP"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="77"/>
-      <circ-port height="10" pin="320,80" width="10" x="125" y="105"/>
-      <circ-port height="8" pin="200,110" width="8" x="176" y="76"/>
-      <circ-port height="8" pin="200,80" width="8" x="76" y="56"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="100" x="80" y="50"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="147" y="100">output</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="154" y="84">set</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="88" y="63">input</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="124" y="78">TMP</text>
+      <circ-anchor facing="east" height="6" width="6" x="177" y="77"/>
+      <circ-port height="10" pin="320,80" width="10" x="125" y="105"/>
+      <circ-port height="8" pin="200,110" width="8" x="176" y="76"/>
+      <circ-port height="8" pin="200,80" width="8" x="76" y="56"/>
     </appear>
     <comp lib="0" loc="(200,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -879,11 +739,9 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="DECODER_3x8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <rect fill="none" height="160" stroke="#000000" stroke-width="2" width="20" x="50" y="20"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="94"/>
       <circ-anchor facing="east" height="6" width="6" x="67" y="97"/>
       <circ-port height="10" pin="410,180" width="10" x="65" y="25"/>
       <circ-port height="10" pin="410,240" width="10" x="65" y="45"/>
@@ -894,8 +752,6 @@ end TCL_Generic;
       <circ-port height="10" pin="410,540" width="10" x="65" y="145"/>
       <circ-port height="10" pin="410,600" width="10" x="65" y="165"/>
       <circ-port height="8" pin="110,80" width="8" x="46" y="96"/>
-      <rect fill="none" height="160" stroke="#000000" stroke-width="2" width="20" x="50" y="20"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="94"/>
     </appear>
     <comp lib="0" loc="(110,80)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -1056,11 +912,8 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="DECODER_4x16"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <rect fill="none" height="170" stroke="#000000" stroke-width="2" width="20" x="20" y="10"/>
       <circ-anchor facing="east" height="6" width="6" x="37" y="87"/>
       <circ-port height="10" pin="410,1020" width="10" x="35" y="155"/>
       <circ-port height="10" pin="410,1080" width="10" x="35" y="165"/>
@@ -1079,7 +932,6 @@ end TCL_Generic;
       <circ-port height="10" pin="410,900" width="10" x="35" y="135"/>
       <circ-port height="10" pin="410,960" width="10" x="35" y="145"/>
       <circ-port height="8" pin="130,90" width="8" x="16" y="86"/>
-      <rect fill="none" height="170" stroke="#000000" stroke-width="2" width="20" x="20" y="10"/>
     </appear>
     <comp lib="0" loc="(130,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -1397,11 +1249,8 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="MEM_CELL"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="30" x="30" y="30"/>
       <circ-anchor facing="east" height="6" width="6" x="57" y="37"/>
       <circ-port height="10" pin="640,130" width="10" x="55" y="35"/>
       <circ-port height="10" pin="640,180" width="10" x="45" y="25"/>
@@ -1411,7 +1260,6 @@ end TCL_Generic;
       <circ-port height="8" pin="210,250" width="8" x="26" y="46"/>
       <circ-port height="8" pin="210,290" width="8" x="46" y="56"/>
       <circ-port height="8" pin="210,330" width="8" x="56" y="46"/>
-      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="30" x="30" y="30"/>
     </appear>
     <comp lib="0" loc="(210,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -1492,20 +1340,7 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="RAM_256"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="227" y="157"/>
-      <circ-port height="10" pin="180,140" width="10" x="165" y="125"/>
-      <circ-port height="10" pin="180,230" width="10" x="225" y="235"/>
-      <circ-port height="8" pin="180,110" width="8" x="106" y="156"/>
-      <circ-port height="8" pin="180,170" width="8" x="106" y="236"/>
-      <circ-port height="8" pin="180,200" width="8" x="106" y="356"/>
-      <circ-port height="8" pin="180,290" width="8" x="106" y="206"/>
-      <circ-port height="8" pin="180,80" width="8" x="226" y="156"/>
-      <circ-port height="8" pin="190,260" width="8" x="226" y="206"/>
       <polyline fill="none" points="110,190 228,190" stroke="#000000" stroke-width="2"/>
       <rect fill="none" height="250" stroke="#000000" stroke-width="2" width="120" x="110" y="130"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="222" y="244">output</text>
@@ -1518,6 +1353,15 @@ end TCL_Generic;
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="144" y="300">RAM 256</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="156" y="142">value</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="158" y="160">MAR</text>
+      <circ-anchor facing="east" height="6" width="6" x="227" y="157"/>
+      <circ-port height="10" pin="180,140" width="10" x="165" y="125"/>
+      <circ-port height="10" pin="180,230" width="10" x="225" y="235"/>
+      <circ-port height="8" pin="180,110" width="8" x="106" y="156"/>
+      <circ-port height="8" pin="180,170" width="8" x="106" y="236"/>
+      <circ-port height="8" pin="180,200" width="8" x="106" y="356"/>
+      <circ-port height="8" pin="180,290" width="8" x="106" y="206"/>
+      <circ-port height="8" pin="180,80" width="8" x="226" y="156"/>
+      <circ-port height="8" pin="190,260" width="8" x="226" y="206"/>
     </appear>
     <comp lib="0" loc="(1000,240)" name="Probe">
       <a name="appearance" val="NewPins"/>
@@ -5754,23 +5598,19 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="FULL_ADDER"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
-      <circ-port height="10" pin="500,100" width="10" x="135" y="75"/>
-      <circ-port height="10" pin="500,140" width="10" x="95" y="45"/>
-      <circ-port height="8" pin="150,100" width="8" x="56" y="66"/>
-      <circ-port height="8" pin="150,140" width="8" x="56" y="86"/>
-      <circ-port height="8" pin="150,60" width="8" x="96" y="106"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="80" x="60" y="50"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="125" y="63">carry out</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="135" y="83">sum</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="73">a</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="66" y="94">b</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="78" y="105">carry in</text>
+      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
+      <circ-port height="10" pin="500,100" width="10" x="135" y="75"/>
+      <circ-port height="10" pin="500,140" width="10" x="95" y="45"/>
+      <circ-port height="8" pin="150,100" width="8" x="56" y="66"/>
+      <circ-port height="8" pin="150,140" width="8" x="56" y="86"/>
+      <circ-port height="8" pin="150,60" width="8" x="96" y="106"/>
     </appear>
     <comp lib="0" loc="(150,100)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -5830,19 +5670,15 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="ADDER_8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <polygon fill="none" points="50,110 50,90 73,80 50,70 50,50 110,70 110,90" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="79">ADD</text>
       <circ-anchor facing="east" height="6" width="6" x="107" y="77"/>
       <circ-port height="10" pin="440,280" width="10" x="75" y="55"/>
       <circ-port height="10" pin="440,320" width="10" x="105" y="75"/>
       <circ-port height="8" pin="120,300" width="8" x="46" y="56"/>
       <circ-port height="8" pin="120,340" width="8" x="46" y="96"/>
       <circ-port height="8" pin="120,380" width="8" x="76" y="96"/>
-      <polygon fill="none" points="50,110 50,90 73,80 50,70 50,50 110,70 110,90" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="79">ADD</text>
     </appear>
     <comp lib="0" loc="(120,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6015,18 +5851,14 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="SHIFT_LEFT"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <polygon fill="none" points="50,110 110,100 110,40 50,50" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="80">SHL</text>
       <circ-anchor facing="east" height="6" width="6" x="107" y="77"/>
       <circ-port height="10" pin="470,50" width="10" x="105" y="45"/>
       <circ-port height="10" pin="470,90" width="10" x="105" y="75"/>
       <circ-port height="8" pin="210,120" width="8" x="46" y="96"/>
       <circ-port height="8" pin="210,80" width="8" x="46" y="76"/>
-      <polygon fill="none" points="50,110 110,100 110,40 50,50" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="80">SHL</text>
     </appear>
     <comp lib="0" loc="(210,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6099,18 +5931,14 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="SHIFT_RIGHT"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <polygon fill="none" points="50,90 110,100 110,40 50,30" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="60">SHR</text>
       <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
       <circ-port height="10" pin="450,100" width="10" x="105" y="55"/>
       <circ-port height="10" pin="450,130" width="10" x="105" y="85"/>
       <circ-port height="8" pin="190,110" width="8" x="46" y="56"/>
       <circ-port height="8" pin="190,70" width="8" x="46" y="36"/>
-      <polygon fill="none" points="50,90 110,100 110,40 50,30" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="60">SHR</text>
     </appear>
     <comp lib="0" loc="(190,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6184,17 +6012,13 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="NOT_8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <ellipse cx="125" cy="200" fill="none" rx="5" ry="5" stroke="#000000" stroke-width="2"/>
+      <polygon fill="none" points="70,170 70,230 119,200" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="200">NOT</text>
       <circ-anchor facing="east" height="6" width="6" x="157" y="177"/>
       <circ-port height="10" pin="320,150" width="10" x="125" y="195"/>
       <circ-port height="8" pin="130,150" width="8" x="66" y="196"/>
-      <ellipse cx="125.0" cy="200.0" fill="none" rx="5.0" ry="5.0" stroke="#000000" stroke-width="2"/>
-      <polygon fill="none" points="70,170 70,230 119,200" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="200">NOT</text>
     </appear>
     <comp lib="0" loc="(130,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6292,20 +6116,16 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="AND_2x8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
-      <circ-port height="10" pin="370,250" width="10" x="115" y="75"/>
-      <circ-port height="8" pin="130,210" width="8" x="56" y="56"/>
-      <circ-port height="8" pin="130,300" width="8" x="56" y="96"/>
-      <ellipse cx="90.0" cy="80.0" fill="none" rx="30.0" ry="30.0" stroke="#000000" stroke-width="2"/>
+      <ellipse cx="90" cy="80" fill="none" rx="30" ry="30" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="90,50 60,50 60,110 90,110" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="91,50 60,50 60,110 90,110" stroke="#000000" stroke-width="2"/>
       <rect fill="#ffffff" height="56" stroke="#ffffff" stroke-width="2" width="28" x="62" y="52"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="80">AND</text>
+      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
+      <circ-port height="10" pin="370,250" width="10" x="115" y="75"/>
+      <circ-port height="8" pin="130,210" width="8" x="56" y="56"/>
+      <circ-port height="8" pin="130,300" width="8" x="56" y="96"/>
     </appear>
     <comp lib="0" loc="(130,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6442,19 +6262,15 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="OR_2x8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
-      <circ-port height="10" pin="370,250" width="10" x="115" y="75"/>
-      <circ-port height="8" pin="130,210" width="8" x="56" y="56"/>
-      <circ-port height="8" pin="130,300" width="8" x="56" y="96"/>
       <path d="M56,110 Q100,109 120,80" fill="none" stroke="#000000" stroke-width="2"/>
       <path d="M56,50 Q100,51 120,80" fill="none" stroke="#000000" stroke-width="2"/>
       <path d="M56,50 Q71,80 56,110" fill="none" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="84" y="80">OR</text>
+      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
+      <circ-port height="10" pin="370,250" width="10" x="115" y="75"/>
+      <circ-port height="8" pin="130,210" width="8" x="56" y="56"/>
+      <circ-port height="8" pin="130,300" width="8" x="56" y="96"/>
     </appear>
     <comp lib="0" loc="(130,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6591,10 +6407,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="XOR_2x8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(130,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="a"/>
@@ -6730,11 +6542,13 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="COMPARATOR_1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="210" x="50" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="254" y="73">xor</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="161" y="68">'a' larger</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="57" y="63">a</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="57" y="74">b</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="92" y="68">equal</text>
       <circ-anchor facing="east" height="6" width="6" x="257" y="67"/>
       <circ-port height="10" pin="210,300" width="10" x="105" y="75"/>
       <circ-port height="10" pin="370,300" width="10" x="185" y="75"/>
@@ -6743,12 +6557,6 @@ end TCL_Generic;
       <circ-port height="8" pin="390,100" width="8" x="186" y="46"/>
       <circ-port height="8" pin="70,170" width="8" x="46" y="56"/>
       <circ-port height="8" pin="70,210" width="8" x="46" y="66"/>
-      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="210" x="50" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="254" y="73">xor</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="161" y="68">'a' larger</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="57" y="63">a</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="57" y="74">b</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="92" y="68">equal</text>
     </appear>
     <comp lib="0" loc="(210,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6823,22 +6631,18 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="COMPARATOR_8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
+      <path d="M56,50 Q71,80 56,110" fill="none" stroke="#000000" stroke-width="2"/>
+      <path d="M60,50 Q75,80 60,110" fill="none" stroke="#000000" stroke-width="2"/>
+      <path d="M61,110 Q100,109 120,80" fill="none" stroke="#000000" stroke-width="2"/>
+      <path d="M61,50 Q100,50 120,80" fill="none" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="80">XOR</text>
       <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
       <circ-port height="10" pin="670,200" width="10" x="115" y="75"/>
       <circ-port height="10" pin="670,360" width="10" x="65" y="45"/>
       <circ-port height="10" pin="670,400" width="10" x="95" y="55"/>
       <circ-port height="8" pin="170,160" width="8" x="56" y="56"/>
       <circ-port height="8" pin="170,240" width="8" x="56" y="96"/>
-      <path d="M56,50 Q71,80 56,110" fill="none" stroke="#000000" stroke-width="2"/>
-      <path d="M60,50 Q75,80 60,110" fill="none" stroke="#000000" stroke-width="2"/>
-      <path d="M61,110 Q100,109 120,80" fill="none" stroke="#000000" stroke-width="2"/>
-      <path d="M61,50 Q100,50 120,80" fill="none" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="80">XOR</text>
     </appear>
     <comp lib="0" loc="(170,160)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7017,17 +6821,13 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="Z"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
-      <circ-port height="10" pin="340,110" width="10" x="75" y="55"/>
-      <circ-port height="8" pin="140,110" width="8" x="46" y="56"/>
       <rect fill="none" height="20" stroke="#000000" stroke-width="2" width="30" x="50" y="50"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="65" y="60">Z</text>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
+      <circ-port height="10" pin="340,110" width="10" x="75" y="55"/>
+      <circ-port height="8" pin="140,110" width="8" x="46" y="56"/>
     </appear>
     <comp lib="0" loc="(140,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7071,21 +6871,7 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="197" y="47"/>
-      <circ-port height="10" pin="630,160" width="10" x="195" y="175"/>
-      <circ-port height="10" pin="630,200" width="10" x="115" y="195"/>
-      <circ-port height="10" pin="630,50" width="10" x="195" y="135"/>
-      <circ-port height="10" pin="630,510" width="10" x="195" y="115"/>
-      <circ-port height="10" pin="630,90" width="10" x="195" y="155"/>
-      <circ-port height="8" pin="160,110" width="8" x="36" y="76"/>
-      <circ-port height="8" pin="160,150" width="8" x="86" y="26"/>
-      <circ-port height="8" pin="160,460" width="8" x="196" y="76"/>
-      <circ-port height="8" pin="160,680" width="8" x="196" y="46"/>
       <rect fill="none" height="170" stroke="#000000" stroke-width="2" width="160" x="40" y="30"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="135" y="191">result</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="190" y="124">carry out</text>
@@ -7097,6 +6883,16 @@ end TCL_Generic;
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="49" y="84">a</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="87" y="46">b</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="88" y="86">ALU</text>
+      <circ-anchor facing="east" height="6" width="6" x="197" y="47"/>
+      <circ-port height="10" pin="630,160" width="10" x="195" y="175"/>
+      <circ-port height="10" pin="630,200" width="10" x="115" y="195"/>
+      <circ-port height="10" pin="630,50" width="10" x="195" y="135"/>
+      <circ-port height="10" pin="630,510" width="10" x="195" y="115"/>
+      <circ-port height="10" pin="630,90" width="10" x="195" y="155"/>
+      <circ-port height="8" pin="160,110" width="8" x="36" y="76"/>
+      <circ-port height="8" pin="160,150" width="8" x="86" y="26"/>
+      <circ-port height="8" pin="160,460" width="8" x="196" y="76"/>
+      <circ-port height="8" pin="160,680" width="8" x="196" y="46"/>
     </appear>
     <comp lib="0" loc="(160,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7315,22 +7111,18 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="CLK"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="287" y="87"/>
-      <circ-port height="10" pin="470,130" width="10" x="105" y="55"/>
-      <circ-port height="10" pin="470,170" width="10" x="245" y="55"/>
-      <circ-port height="10" pin="470,90" width="10" x="175" y="55"/>
-      <circ-port height="8" pin="140,150" width="8" x="286" y="86"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="220" x="70" y="60"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="125" y="77">clock</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="202" y="77">clock set</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="287" y="76">clock enable</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="272" y="94">C</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="180" y="94">CLOCK</text>
+      <circ-anchor facing="east" height="6" width="6" x="287" y="87"/>
+      <circ-port height="10" pin="470,130" width="10" x="105" y="55"/>
+      <circ-port height="10" pin="470,170" width="10" x="245" y="55"/>
+      <circ-port height="10" pin="470,90" width="10" x="175" y="55"/>
+      <circ-port height="8" pin="140,150" width="8" x="286" y="86"/>
     </appear>
     <comp lib="0" loc="(140,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7383,20 +7175,16 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="BUS_1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="67"/>
-      <circ-port height="10" pin="290,340" width="10" x="125" y="95"/>
-      <circ-port height="8" pin="240,70" width="8" x="126" y="36"/>
-      <circ-port height="8" pin="580,160" width="8" x="176" y="66"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="100" x="80" y="40"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="122" y="70">BUS 1</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="110" y="85">output</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="116" y="49">input</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="153" y="69">set</text>
+      <circ-anchor facing="east" height="6" width="6" x="177" y="67"/>
+      <circ-port height="10" pin="290,340" width="10" x="125" y="95"/>
+      <circ-port height="8" pin="240,70" width="8" x="126" y="36"/>
+      <circ-port height="8" pin="580,160" width="8" x="176" y="66"/>
     </appear>
     <comp lib="0" loc="(240,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7526,19 +7314,7 @@ end TCL_Generic;
     <a name="appearance" val="custom"/>
     <a name="circuit" val="STEPPER"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="227" y="67"/>
-      <circ-port height="10" pin="240,120" width="10" x="55" y="75"/>
-      <circ-port height="10" pin="330,120" width="10" x="85" y="75"/>
-      <circ-port height="10" pin="410,120" width="10" x="115" y="75"/>
-      <circ-port height="10" pin="490,120" width="10" x="145" y="75"/>
-      <circ-port height="10" pin="570,120" width="10" x="175" y="75"/>
-      <circ-port height="10" pin="650,120" width="10" x="205" y="75"/>
-      <circ-port height="8" pin="150,280" width="8" x="36" y="46"/>
       <rect fill="none" height="50" stroke="#000000" stroke-width="2" width="190" x="40" y="30"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="49" y="53">clock</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="121" y="65">2</text>
@@ -7548,6 +7324,14 @@ end TCL_Generic;
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="210" y="65">5</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="65">0</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="65">1</text>
+      <circ-anchor facing="east" height="6" width="6" x="227" y="67"/>
+      <circ-port height="10" pin="240,120" width="10" x="55" y="75"/>
+      <circ-port height="10" pin="330,120" width="10" x="85" y="75"/>
+      <circ-port height="10" pin="410,120" width="10" x="115" y="75"/>
+      <circ-port height="10" pin="490,120" width="10" x="145" y="75"/>
+      <circ-port height="10" pin="570,120" width="10" x="175" y="75"/>
+      <circ-port height="10" pin="650,120" width="10" x="205" y="75"/>
+      <circ-port height="8" pin="150,280" width="8" x="36" y="46"/>
     </appear>
     <comp lib="0" loc="(150,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7715,19 +7499,11 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="CPU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
   </circuit>
   <circuit name="clk_demo">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="clk_demo"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(220,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -7760,10 +7536,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="cpu_demo_0"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(110,140)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="facing" val="west"/>
@@ -8376,10 +8148,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="cpu_demo_1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(100,400)" name="Probe">
       <a name="appearance" val="NewPins"/>
       <a name="radix" val="16"/>
@@ -8635,10 +8403,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="control_section_add"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(490,440)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -8667,10 +8431,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="shift_register"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(150,180)" name="Clock"/>
     <comp lib="0" loc="(160,340)" name="Clock"/>
     <comp lib="0" loc="(170,140)" name="Pin">
@@ -8729,10 +8489,6 @@ end TCL_Generic;
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="cpu_alt"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
     <comp lib="0" loc="(100,400)" name="Probe">
       <a name="appearance" val="NewPins"/>
       <a name="radix" val="16"/>
