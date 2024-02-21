@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.7.2" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -100,7 +100,7 @@
     <comp lib="0" loc="(80,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="8" loc="(134,35)" name="Text">
+    <comp lib="8" loc="(130,35)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="NOT gate"/>
     </comp>
@@ -120,109 +120,83 @@
     <a name="circuit" val="NAND_gate"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(140,230)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </comp>
-    <comp lib="0" loc="(180,140)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(180,170)" name="Power"/>
-    <comp lib="0" loc="(180,220)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(180,240)" name="Transistor">
-      <a name="facing" val="north"/>
-      <a name="type" val="n"/>
-    </comp>
-    <comp lib="0" loc="(180,280)" name="Transistor">
-      <a name="facing" val="north"/>
-      <a name="type" val="n"/>
-    </comp>
-    <comp lib="0" loc="(180,330)" name="Ground"/>
-    <comp lib="0" loc="(180,90)" name="Power"/>
-    <comp lib="0" loc="(260,180)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(480,220)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(130,130)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(480,260)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(150,240)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(150,280)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(520,150)" name="Transistor">
+    <comp lib="0" loc="(170,150)" name="Transistor">
       <a name="facing" val="south"/>
+      <a name="selloc" val="bl"/>
     </comp>
-    <comp lib="0" loc="(540,100)" name="Power"/>
-    <comp lib="0" loc="(540,200)" name="Transistor">
+    <comp lib="0" loc="(190,220)" name="Transistor">
       <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
       <a name="type" val="n"/>
     </comp>
-    <comp lib="0" loc="(540,240)" name="Transistor">
+    <comp lib="0" loc="(190,260)" name="Transistor">
       <a name="facing" val="north"/>
+      <a name="selloc" val="bl"/>
       <a name="type" val="n"/>
     </comp>
-    <comp lib="0" loc="(540,290)" name="Ground"/>
-    <comp lib="0" loc="(560,150)" name="Transistor">
+    <comp lib="0" loc="(190,310)" name="Ground"/>
+    <comp lib="0" loc="(190,70)" name="Power"/>
+    <comp lib="0" loc="(210,150)" name="Transistor">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(590,130)" name="Tunnel">
+    <comp lib="0" loc="(250,130)" name="Tunnel">
       <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(600,180)" name="Pin">
+    <comp lib="0" loc="(250,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="Q"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(80,180)" name="Pin">
+    <comp lib="0" loc="(60,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="label" val="A"/>
     </comp>
-    <comp lib="8" loc="(198,42)" name="Text">
+    <comp lib="0" loc="(60,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(80,210)" name="Tunnel">
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(80,240)" name="Tunnel">
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="8" loc="(195,40)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="NAND gate (2NMOS, 2PMOS)"/>
     </comp>
-    <wire from="(140,230)" to="(150,230)"/>
-    <wire from="(150,200)" to="(150,230)"/>
-    <wire from="(150,200)" to="(160,200)"/>
-    <wire from="(150,230)" to="(150,260)"/>
-    <wire from="(150,260)" to="(160,260)"/>
-    <wire from="(180,140)" to="(200,140)"/>
-    <wire from="(180,170)" to="(180,180)"/>
-    <wire from="(180,220)" to="(180,230)"/>
-    <wire from="(180,230)" to="(180,240)"/>
-    <wire from="(180,230)" to="(200,230)"/>
-    <wire from="(180,320)" to="(180,330)"/>
-    <wire from="(180,90)" to="(180,100)"/>
-    <wire from="(200,140)" to="(200,180)"/>
-    <wire from="(200,180)" to="(200,200)"/>
-    <wire from="(200,180)" to="(260,180)"/>
-    <wire from="(200,200)" to="(200,230)"/>
-    <wire from="(480,220)" to="(490,220)"/>
-    <wire from="(480,260)" to="(490,260)"/>
-    <wire from="(490,130)" to="(490,220)"/>
-    <wire from="(490,130)" to="(500,130)"/>
-    <wire from="(490,220)" to="(520,220)"/>
-    <wire from="(490,260)" to="(490,290)"/>
-    <wire from="(490,260)" to="(520,260)"/>
-    <wire from="(520,110)" to="(540,110)"/>
-    <wire from="(520,150)" to="(540,150)"/>
-    <wire from="(540,100)" to="(540,110)"/>
-    <wire from="(540,110)" to="(560,110)"/>
-    <wire from="(540,150)" to="(540,180)"/>
-    <wire from="(540,150)" to="(560,150)"/>
-    <wire from="(540,180)" to="(540,200)"/>
-    <wire from="(540,180)" to="(600,180)"/>
-    <wire from="(540,280)" to="(540,290)"/>
-    <wire from="(580,130)" to="(590,130)"/>
-    <wire from="(80,180)" to="(90,180)"/>
-    <wire from="(90,120)" to="(160,120)"/>
-    <wire from="(90,120)" to="(90,180)"/>
-    <wire from="(90,180)" to="(90,300)"/>
-    <wire from="(90,300)" to="(160,300)"/>
+    <wire from="(130,130)" to="(150,130)"/>
+    <wire from="(150,240)" to="(170,240)"/>
+    <wire from="(150,280)" to="(170,280)"/>
+    <wire from="(170,150)" to="(170,170)"/>
+    <wire from="(170,170)" to="(190,170)"/>
+    <wire from="(170,90)" to="(170,110)"/>
+    <wire from="(170,90)" to="(190,90)"/>
+    <wire from="(190,170)" to="(190,200)"/>
+    <wire from="(190,170)" to="(210,170)"/>
+    <wire from="(190,200)" to="(190,220)"/>
+    <wire from="(190,200)" to="(250,200)"/>
+    <wire from="(190,300)" to="(190,310)"/>
+    <wire from="(190,70)" to="(190,90)"/>
+    <wire from="(190,90)" to="(210,90)"/>
+    <wire from="(210,150)" to="(210,170)"/>
+    <wire from="(210,90)" to="(210,110)"/>
+    <wire from="(230,130)" to="(250,130)"/>
+    <wire from="(60,210)" to="(80,210)"/>
+    <wire from="(60,240)" to="(80,240)"/>
   </circuit>
   <circuit name="NOR_gate">
     <a name="appearance" val="logisim_evolution"/>
@@ -257,7 +231,7 @@
     <comp lib="0" loc="(70,190)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="8" loc="(184,36)" name="Text">
+    <comp lib="8" loc="(180,35)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="NOR gate (2NMOS, 2PMOS)"/>
     </comp>
@@ -296,18 +270,11 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="140">R</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="80">S</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="61">active low</text>
-      <circ-anchor facing="east" height="6" width="6" x="127" y="77"/>
-      <circ-port height="10" pin="540,220" width="10" x="125" y="135"/>
-      <circ-port height="10" pin="540,90" width="10" x="125" y="75"/>
-      <circ-port height="8" pin="80,240" width="8" x="56" y="136"/>
-      <circ-port height="8" pin="80,70" width="8" x="56" y="76"/>
+      <circ-anchor facing="east" x="130" y="80"/>
+      <circ-port dir="in" pin="80,240" x="60" y="140"/>
+      <circ-port dir="in" pin="80,70" x="60" y="80"/>
+      <circ-port dir="out" pin="540,90" x="130" y="80"/>
     </appear>
-    <comp lib="0" loc="(540,220)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="not_Q"/>
-      <a name="output" val="true"/>
-    </comp>
     <comp lib="0" loc="(540,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -316,15 +283,17 @@
     </comp>
     <comp lib="0" loc="(80,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="initial" val="0x1"/>
       <a name="label" val="R"/>
     </comp>
     <comp lib="0" loc="(80,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="initial" val="0x1"/>
       <a name="label" val="S"/>
     </comp>
     <comp lib="1" loc="(360,220)" name="NAND Gate"/>
     <comp lib="1" loc="(360,90)" name="NAND Gate"/>
-    <comp lib="8" loc="(350,46)" name="Text">
+    <comp lib="8" loc="(350,45)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Active LOW SR latch"/>
     </comp>
@@ -337,7 +306,6 @@
     <wire from="(360,220)" to="(380,220)"/>
     <wire from="(360,90)" to="(410,90)"/>
     <wire from="(380,140)" to="(380,220)"/>
-    <wire from="(380,220)" to="(540,220)"/>
     <wire from="(410,90)" to="(410,170)"/>
     <wire from="(410,90)" to="(540,90)"/>
     <wire from="(80,240)" to="(300,240)"/>
@@ -354,10 +322,10 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="78" y="64">i</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="78" y="93">s</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="75">MEM 1</text>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="57"/>
-      <circ-port height="10" pin="610,100" width="10" x="115" y="55"/>
-      <circ-port height="8" pin="150,180" width="8" x="66" y="86"/>
-      <circ-port height="8" pin="150,80" width="8" x="66" y="56"/>
+      <circ-anchor facing="east" x="120" y="60"/>
+      <circ-port dir="in" pin="150,180" x="70" y="90"/>
+      <circ-port dir="in" pin="150,80" x="70" y="60"/>
+      <circ-port dir="out" pin="610,100" x="120" y="60"/>
     </appear>
     <comp lib="0" loc="(150,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -375,7 +343,7 @@
     </comp>
     <comp lib="1" loc="(270,100)" name="NAND Gate"/>
     <comp lib="1" loc="(380,160)" name="NAND Gate"/>
-    <comp lib="8" loc="(345,56)" name="Text">
+    <comp lib="8" loc="(345,55)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="1 bit memory"/>
     </comp>
@@ -405,17 +373,19 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="set"/>
     </comp>
-    <comp lib="0" loc="(470,270)" name="Pin">
+    <comp lib="0" loc="(520,270)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
       <a name="label" val="S"/>
+      <a name="tristate" val="true"/>
     </comp>
-    <comp lib="0" loc="(470,460)" name="Pin">
+    <comp lib="0" loc="(520,460)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
       <a name="label" val="R"/>
+      <a name="tristate" val="true"/>
     </comp>
-    <comp lib="0" loc="(690,330)" name="Pin">
+    <comp lib="0" loc="(740,330)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="Q"/>
@@ -423,7 +393,7 @@
     </comp>
     <comp lib="1" loc="(350,330)" name="NAND Gate"/>
     <comp lib="1" loc="(460,390)" name="NAND Gate"/>
-    <comp loc="(560,330)" name="SR_latch_active_low"/>
+    <comp loc="(610,330)" name="SR_latch_active_low"/>
     <wire from="(230,310)" to="(290,310)"/>
     <wire from="(230,410)" to="(260,410)"/>
     <wire from="(260,350)" to="(260,410)"/>
@@ -431,14 +401,14 @@
     <wire from="(260,410)" to="(400,410)"/>
     <wire from="(350,330)" to="(370,330)"/>
     <wire from="(370,330)" to="(370,370)"/>
-    <wire from="(370,330)" to="(470,330)"/>
+    <wire from="(370,330)" to="(520,330)"/>
     <wire from="(370,370)" to="(400,370)"/>
-    <wire from="(460,390)" to="(470,390)"/>
-    <wire from="(470,270)" to="(470,330)"/>
-    <wire from="(470,330)" to="(490,330)"/>
-    <wire from="(470,390)" to="(470,460)"/>
-    <wire from="(470,390)" to="(490,390)"/>
-    <wire from="(560,330)" to="(690,330)"/>
+    <wire from="(460,390)" to="(520,390)"/>
+    <wire from="(520,270)" to="(520,330)"/>
+    <wire from="(520,330)" to="(540,330)"/>
+    <wire from="(520,390)" to="(520,460)"/>
+    <wire from="(520,390)" to="(540,390)"/>
+    <wire from="(610,330)" to="(740,330)"/>
   </circuit>
   <circuit name="master_slave_D_flip_flop">
     <a name="appearance" val="logisim_evolution"/>
@@ -586,10 +556,10 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="56" y="64">i</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="79" y="84">8</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="70">MEM</text>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
-      <circ-port height="10" pin="730,70" width="10" x="105" y="55"/>
-      <circ-port height="8" pin="310,490" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="370,80" width="8" x="46" y="56"/>
+      <circ-anchor facing="east" x="110" y="60"/>
+      <circ-port dir="in" pin="310,490" x="50" y="80"/>
+      <circ-port dir="in" pin="370,80" x="50" y="60"/>
+      <circ-port dir="out" pin="730,70" x="110" y="60"/>
     </appear>
     <comp lib="0" loc="(310,490)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -618,7 +588,7 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="8" loc="(568,66)" name="Text">
+    <comp lib="8" loc="(565,65)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="1 byte memory"/>
     </comp>
@@ -693,12 +663,12 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="71" y="110">set</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="99" y="110">enable</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="79">REG</text>
-      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
-      <circ-port height="10" pin="320,100" width="10" x="135" y="75"/>
-      <circ-port height="10" pin="320,130" width="10" x="115" y="35"/>
-      <circ-port height="8" pin="150,130" width="8" x="76" y="36"/>
-      <circ-port height="8" pin="150,160" width="8" x="76" y="116"/>
-      <circ-port height="8" pin="150,190" width="8" x="116" y="116"/>
+      <circ-anchor facing="east" x="140" y="80"/>
+      <circ-port dir="in" pin="150,130" x="80" y="40"/>
+      <circ-port dir="in" pin="150,160" x="80" y="120"/>
+      <circ-port dir="in" pin="150,190" x="120" y="120"/>
+      <circ-port dir="out" pin="320,100" x="140" y="80"/>
+      <circ-port dir="out" pin="320,130" x="120" y="40"/>
     </appear>
     <comp lib="0" loc="(150,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -733,7 +703,7 @@
     <comp lib="1" loc="(310,130)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="8" loc="(219,74)" name="Text">
+    <comp lib="8" loc="(215,70)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="1 byte register"/>
     </comp>
@@ -763,12 +733,12 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="47" y="49">output</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="142" y="108">value</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="30" y="85">ACCUMULATOR</text>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="77"/>
-      <circ-port height="10" pin="250,100" width="10" x="175" y="105"/>
-      <circ-port height="10" pin="250,40" width="10" x="15" y="45"/>
-      <circ-port height="8" pin="150,160" width="8" x="176" y="46"/>
-      <circ-port height="8" pin="150,190" width="8" x="176" y="76"/>
-      <circ-port height="8" pin="150,40" width="8" x="96" y="36"/>
+      <circ-anchor facing="east" x="180" y="80"/>
+      <circ-port dir="in" pin="150,160" x="180" y="50"/>
+      <circ-port dir="in" pin="150,190" x="180" y="80"/>
+      <circ-port dir="in" pin="150,40" x="100" y="40"/>
+      <circ-port dir="out" pin="250,100" x="180" y="110"/>
+      <circ-port dir="out" pin="250,40" x="20" y="50"/>
     </appear>
     <comp lib="0" loc="(150,160)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -822,10 +792,10 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="154" y="84">set</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="88" y="63">input</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="124" y="78">TMP</text>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="77"/>
-      <circ-port height="10" pin="320,80" width="10" x="125" y="105"/>
-      <circ-port height="8" pin="200,110" width="8" x="176" y="76"/>
-      <circ-port height="8" pin="200,80" width="8" x="76" y="56"/>
+      <circ-anchor facing="east" x="180" y="80"/>
+      <circ-port dir="in" pin="200,110" x="180" y="80"/>
+      <circ-port dir="in" pin="200,80" x="80" y="60"/>
+      <circ-port dir="out" pin="320,80" x="130" y="110"/>
     </appear>
     <comp lib="0" loc="(200,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -860,16 +830,16 @@
     <appear>
       <rect fill="none" height="160" stroke="#000000" stroke-width="2" width="20" x="50" y="20"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="94"/>
-      <circ-anchor facing="east" height="6" width="6" x="67" y="97"/>
-      <circ-port height="10" pin="410,180" width="10" x="65" y="25"/>
-      <circ-port height="10" pin="410,240" width="10" x="65" y="45"/>
-      <circ-port height="10" pin="410,300" width="10" x="65" y="65"/>
-      <circ-port height="10" pin="410,360" width="10" x="65" y="85"/>
-      <circ-port height="10" pin="410,420" width="10" x="65" y="105"/>
-      <circ-port height="10" pin="410,480" width="10" x="65" y="125"/>
-      <circ-port height="10" pin="410,540" width="10" x="65" y="145"/>
-      <circ-port height="10" pin="410,600" width="10" x="65" y="165"/>
-      <circ-port height="8" pin="110,80" width="8" x="46" y="96"/>
+      <circ-anchor facing="east" x="70" y="100"/>
+      <circ-port dir="in" pin="110,80" x="50" y="100"/>
+      <circ-port dir="out" pin="410,180" x="70" y="30"/>
+      <circ-port dir="out" pin="410,240" x="70" y="50"/>
+      <circ-port dir="out" pin="410,300" x="70" y="70"/>
+      <circ-port dir="out" pin="410,360" x="70" y="90"/>
+      <circ-port dir="out" pin="410,420" x="70" y="110"/>
+      <circ-port dir="out" pin="410,480" x="70" y="130"/>
+      <circ-port dir="out" pin="410,540" x="70" y="150"/>
+      <circ-port dir="out" pin="410,600" x="70" y="170"/>
     </appear>
     <comp lib="0" loc="(110,80)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -956,7 +926,7 @@
     <comp lib="1" loc="(390,600)" name="AND Gate">
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="8" loc="(268,42)" name="Text">
+    <comp lib="8" loc="(265,40)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="3x8 decoder"/>
     </comp>
@@ -1034,24 +1004,24 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="none" height="170" stroke="#000000" stroke-width="2" width="20" x="20" y="10"/>
-      <circ-anchor facing="east" height="6" width="6" x="37" y="87"/>
-      <circ-port height="10" pin="410,1020" width="10" x="35" y="155"/>
-      <circ-port height="10" pin="410,1080" width="10" x="35" y="165"/>
-      <circ-port height="10" pin="410,180" width="10" x="35" y="15"/>
-      <circ-port height="10" pin="410,240" width="10" x="35" y="25"/>
-      <circ-port height="10" pin="410,300" width="10" x="35" y="35"/>
-      <circ-port height="10" pin="410,360" width="10" x="35" y="45"/>
-      <circ-port height="10" pin="410,420" width="10" x="35" y="55"/>
-      <circ-port height="10" pin="410,480" width="10" x="35" y="65"/>
-      <circ-port height="10" pin="410,540" width="10" x="35" y="75"/>
-      <circ-port height="10" pin="410,600" width="10" x="35" y="85"/>
-      <circ-port height="10" pin="410,660" width="10" x="35" y="95"/>
-      <circ-port height="10" pin="410,720" width="10" x="35" y="105"/>
-      <circ-port height="10" pin="410,780" width="10" x="35" y="115"/>
-      <circ-port height="10" pin="410,840" width="10" x="35" y="125"/>
-      <circ-port height="10" pin="410,900" width="10" x="35" y="135"/>
-      <circ-port height="10" pin="410,960" width="10" x="35" y="145"/>
-      <circ-port height="8" pin="130,90" width="8" x="16" y="86"/>
+      <circ-anchor facing="east" x="40" y="90"/>
+      <circ-port dir="in" pin="130,90" x="20" y="90"/>
+      <circ-port dir="out" pin="410,1020" x="40" y="160"/>
+      <circ-port dir="out" pin="410,1080" x="40" y="170"/>
+      <circ-port dir="out" pin="410,180" x="40" y="20"/>
+      <circ-port dir="out" pin="410,240" x="40" y="30"/>
+      <circ-port dir="out" pin="410,300" x="40" y="40"/>
+      <circ-port dir="out" pin="410,360" x="40" y="50"/>
+      <circ-port dir="out" pin="410,420" x="40" y="60"/>
+      <circ-port dir="out" pin="410,480" x="40" y="70"/>
+      <circ-port dir="out" pin="410,540" x="40" y="80"/>
+      <circ-port dir="out" pin="410,600" x="40" y="90"/>
+      <circ-port dir="out" pin="410,660" x="40" y="100"/>
+      <circ-port dir="out" pin="410,720" x="40" y="110"/>
+      <circ-port dir="out" pin="410,780" x="40" y="120"/>
+      <circ-port dir="out" pin="410,840" x="40" y="130"/>
+      <circ-port dir="out" pin="410,900" x="40" y="140"/>
+      <circ-port dir="out" pin="410,960" x="40" y="150"/>
     </appear>
     <comp lib="0" loc="(130,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -1205,7 +1175,7 @@
     <comp lib="1" loc="(390,960)" name="AND Gate">
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="8" loc="(268,41)" name="Text">
+    <comp lib="8" loc="(265,40)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="4x16 decoder"/>
     </comp>
@@ -1373,15 +1343,15 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="30" x="30" y="30"/>
-      <circ-anchor facing="east" height="6" width="6" x="57" y="37"/>
-      <circ-port height="10" pin="640,130" width="10" x="55" y="35"/>
-      <circ-port height="10" pin="640,180" width="10" x="45" y="25"/>
-      <circ-port height="8" pin="210,130" width="8" x="26" y="36"/>
-      <circ-port height="8" pin="210,170" width="8" x="36" y="26"/>
-      <circ-port height="8" pin="210,210" width="8" x="36" y="56"/>
-      <circ-port height="8" pin="210,250" width="8" x="26" y="46"/>
-      <circ-port height="8" pin="210,290" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="210,330" width="8" x="56" y="46"/>
+      <circ-anchor facing="east" x="60" y="40"/>
+      <circ-port dir="in" pin="210,130" x="30" y="40"/>
+      <circ-port dir="in" pin="210,170" x="40" y="30"/>
+      <circ-port dir="in" pin="210,210" x="40" y="60"/>
+      <circ-port dir="in" pin="210,250" x="30" y="50"/>
+      <circ-port dir="in" pin="210,290" x="50" y="60"/>
+      <circ-port dir="in" pin="210,330" x="60" y="50"/>
+      <circ-port dir="out" pin="640,130" x="60" y="40"/>
+      <circ-port dir="out" pin="640,180" x="50" y="30"/>
     </appear>
     <comp lib="0" loc="(210,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -1429,7 +1399,7 @@
     <comp lib="1" loc="(390,250)" name="AND Gate"/>
     <comp lib="1" loc="(390,310)" name="AND Gate"/>
     <comp lib="1" loc="(510,230)" name="OR Gate"/>
-    <comp lib="8" loc="(466,88)" name="Text">
+    <comp lib="8" loc="(465,85)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="1 byte memory cell"/>
     </comp>
@@ -1476,15 +1446,15 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="144" y="300">RAM 256</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="156" y="142">value</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="158" y="160">MAR</text>
-      <circ-anchor facing="east" height="6" width="6" x="227" y="157"/>
-      <circ-port height="10" pin="180,140" width="10" x="165" y="125"/>
-      <circ-port height="10" pin="180,230" width="10" x="225" y="235"/>
-      <circ-port height="8" pin="180,110" width="8" x="106" y="156"/>
-      <circ-port height="8" pin="180,170" width="8" x="106" y="236"/>
-      <circ-port height="8" pin="180,200" width="8" x="106" y="356"/>
-      <circ-port height="8" pin="180,290" width="8" x="106" y="206"/>
-      <circ-port height="8" pin="180,80" width="8" x="226" y="156"/>
-      <circ-port height="8" pin="190,260" width="8" x="226" y="206"/>
+      <circ-anchor facing="east" x="230" y="160"/>
+      <circ-port dir="in" pin="180,110" x="110" y="160"/>
+      <circ-port dir="in" pin="180,170" x="110" y="240"/>
+      <circ-port dir="in" pin="180,200" x="110" y="360"/>
+      <circ-port dir="in" pin="180,290" x="110" y="210"/>
+      <circ-port dir="in" pin="180,80" x="230" y="160"/>
+      <circ-port dir="in" pin="190,260" x="230" y="210"/>
+      <circ-port dir="out" pin="180,140" x="170" y="130"/>
+      <circ-port dir="out" pin="180,230" x="230" y="240"/>
     </appear>
     <comp lib="0" loc="(1000,240)" name="Probe">
       <a name="appearance" val="NewPins"/>
@@ -5727,11 +5697,11 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="60">HALF ADDER</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="150" y="49">sum</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="148" y="69">carry</text>
-      <circ-anchor facing="east" height="6" width="6" x="167" y="57"/>
-      <circ-port height="10" pin="350,130" width="10" x="165" y="45"/>
-      <circ-port height="10" pin="350,200" width="10" x="165" y="65"/>
-      <circ-port height="8" pin="150,110" width="8" x="46" y="46"/>
-      <circ-port height="8" pin="150,150" width="8" x="46" y="66"/>
+      <circ-anchor facing="east" x="170" y="60"/>
+      <circ-port dir="in" pin="150,110" x="50" y="50"/>
+      <circ-port dir="in" pin="150,150" x="50" y="70"/>
+      <circ-port dir="out" pin="350,130" x="170" y="50"/>
+      <circ-port dir="out" pin="350,200" x="170" y="70"/>
     </appear>
     <comp lib="0" loc="(150,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -5778,12 +5748,12 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="73">a</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="66" y="94">b</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="78" y="105">carry in</text>
-      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
-      <circ-port height="10" pin="430,40" width="10" x="135" y="75"/>
-      <circ-port height="10" pin="430,60" width="10" x="95" y="45"/>
-      <circ-port height="8" pin="140,40" width="8" x="96" y="106"/>
-      <circ-port height="8" pin="140,60" width="8" x="56" y="66"/>
-      <circ-port height="8" pin="140,80" width="8" x="56" y="86"/>
+      <circ-anchor facing="east" x="140" y="80"/>
+      <circ-port dir="in" pin="140,40" x="100" y="110"/>
+      <circ-port dir="in" pin="140,60" x="60" y="70"/>
+      <circ-port dir="in" pin="140,80" x="60" y="90"/>
+      <circ-port dir="out" pin="430,40" x="140" y="80"/>
+      <circ-port dir="out" pin="430,60" x="100" y="50"/>
     </appear>
     <comp lib="0" loc="(140,40)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -5826,12 +5796,12 @@
     <appear>
       <polygon fill="none" points="50,110 50,90 73,80 50,70 50,50 110,70 110,90" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="79">ADD</text>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="77"/>
-      <circ-port height="10" pin="440,280" width="10" x="75" y="55"/>
-      <circ-port height="10" pin="440,320" width="10" x="105" y="75"/>
-      <circ-port height="8" pin="120,300" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="120,340" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="120,380" width="8" x="76" y="96"/>
+      <circ-anchor facing="east" x="110" y="80"/>
+      <circ-port dir="in" pin="120,300" x="50" y="60"/>
+      <circ-port dir="in" pin="120,340" x="50" y="100"/>
+      <circ-port dir="in" pin="120,380" x="80" y="100"/>
+      <circ-port dir="out" pin="440,280" x="80" y="60"/>
+      <circ-port dir="out" pin="440,320" x="110" y="80"/>
     </appear>
     <comp lib="0" loc="(120,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6008,11 +5978,11 @@
     <appear>
       <polygon fill="none" points="50,110 110,100 110,40 50,50" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="80">SHL</text>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="77"/>
-      <circ-port height="10" pin="470,50" width="10" x="105" y="45"/>
-      <circ-port height="10" pin="470,90" width="10" x="105" y="75"/>
-      <circ-port height="8" pin="210,120" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="210,80" width="8" x="46" y="76"/>
+      <circ-anchor facing="east" x="110" y="80"/>
+      <circ-port dir="in" pin="210,120" x="50" y="100"/>
+      <circ-port dir="in" pin="210,80" x="50" y="80"/>
+      <circ-port dir="out" pin="470,50" x="110" y="50"/>
+      <circ-port dir="out" pin="470,90" x="110" y="80"/>
     </appear>
     <comp lib="0" loc="(210,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6088,11 +6058,11 @@
     <appear>
       <polygon fill="none" points="50,90 110,100 110,40 50,30" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="60">SHR</text>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
-      <circ-port height="10" pin="450,100" width="10" x="105" y="55"/>
-      <circ-port height="10" pin="450,130" width="10" x="105" y="85"/>
-      <circ-port height="8" pin="190,110" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="190,70" width="8" x="46" y="36"/>
+      <circ-anchor facing="east" x="110" y="60"/>
+      <circ-port dir="in" pin="190,110" x="50" y="60"/>
+      <circ-port dir="in" pin="190,70" x="50" y="40"/>
+      <circ-port dir="out" pin="450,100" x="110" y="60"/>
+      <circ-port dir="out" pin="450,130" x="110" y="90"/>
     </appear>
     <comp lib="0" loc="(190,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6171,9 +6141,9 @@
       <ellipse cx="125" cy="200" fill="none" rx="5" ry="5" stroke="#000000" stroke-width="2"/>
       <polygon fill="none" points="70,170 70,230 119,200" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="200">NOT</text>
-      <circ-anchor facing="east" height="6" width="6" x="157" y="177"/>
-      <circ-port height="10" pin="320,150" width="10" x="125" y="195"/>
-      <circ-port height="8" pin="130,150" width="8" x="66" y="196"/>
+      <circ-anchor facing="east" x="160" y="180"/>
+      <circ-port dir="in" pin="130,150" x="70" y="200"/>
+      <circ-port dir="out" pin="320,150" x="130" y="200"/>
     </appear>
     <comp lib="0" loc="(130,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6278,10 +6248,10 @@
       <polyline fill="none" points="91,50 60,50 60,110 90,110" stroke="#000000" stroke-width="2"/>
       <rect fill="#ffffff" height="56" stroke="#ffffff" stroke-width="2" width="28" x="62" y="52"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="80">AND</text>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
-      <circ-port height="10" pin="370,250" width="10" x="115" y="75"/>
-      <circ-port height="8" pin="130,210" width="8" x="56" y="56"/>
-      <circ-port height="8" pin="130,300" width="8" x="56" y="96"/>
+      <circ-anchor facing="east" x="120" y="80"/>
+      <circ-port dir="in" pin="130,210" x="60" y="60"/>
+      <circ-port dir="in" pin="130,300" x="60" y="100"/>
+      <circ-port dir="out" pin="370,250" x="120" y="80"/>
     </appear>
     <comp lib="0" loc="(130,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6424,10 +6394,10 @@
       <path d="M56,50 Q100,51 120,80" fill="none" stroke="#000000" stroke-width="2"/>
       <path d="M56,50 Q71,80 56,110" fill="none" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="84" y="80">OR</text>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
-      <circ-port height="10" pin="370,250" width="10" x="115" y="75"/>
-      <circ-port height="8" pin="130,210" width="8" x="56" y="56"/>
-      <circ-port height="8" pin="130,300" width="8" x="56" y="96"/>
+      <circ-anchor facing="east" x="120" y="80"/>
+      <circ-port dir="in" pin="130,210" x="60" y="60"/>
+      <circ-port dir="in" pin="130,300" x="60" y="100"/>
+      <circ-port dir="out" pin="370,250" x="120" y="80"/>
     </appear>
     <comp lib="0" loc="(130,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6708,14 +6678,14 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="57" y="63">a</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="57" y="74">b</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="92" y="68">equal</text>
-      <circ-anchor facing="east" height="6" width="6" x="257" y="67"/>
-      <circ-port height="10" pin="210,300" width="10" x="105" y="75"/>
-      <circ-port height="10" pin="370,300" width="10" x="185" y="75"/>
-      <circ-port height="10" pin="430,210" width="10" x="255" y="65"/>
-      <circ-port height="8" pin="230,100" width="8" x="106" y="46"/>
-      <circ-port height="8" pin="390,100" width="8" x="186" y="46"/>
-      <circ-port height="8" pin="70,170" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="70,210" width="8" x="46" y="66"/>
+      <circ-anchor facing="east" x="260" y="70"/>
+      <circ-port dir="in" pin="230,100" x="110" y="50"/>
+      <circ-port dir="in" pin="390,100" x="190" y="50"/>
+      <circ-port dir="in" pin="70,170" x="50" y="60"/>
+      <circ-port dir="in" pin="70,210" x="50" y="70"/>
+      <circ-port dir="out" pin="210,300" x="110" y="80"/>
+      <circ-port dir="out" pin="370,300" x="190" y="80"/>
+      <circ-port dir="out" pin="430,210" x="260" y="70"/>
     </appear>
     <comp lib="0" loc="(210,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6797,12 +6767,12 @@
       <path d="M61,110 Q100,109 120,80" fill="none" stroke="#000000" stroke-width="2"/>
       <path d="M61,50 Q100,50 120,80" fill="none" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="80">XOR</text>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="77"/>
-      <circ-port height="10" pin="670,200" width="10" x="115" y="75"/>
-      <circ-port height="10" pin="670,360" width="10" x="65" y="45"/>
-      <circ-port height="10" pin="670,400" width="10" x="95" y="55"/>
-      <circ-port height="8" pin="170,160" width="8" x="56" y="56"/>
-      <circ-port height="8" pin="170,240" width="8" x="56" y="96"/>
+      <circ-anchor facing="east" x="120" y="80"/>
+      <circ-port dir="in" pin="170,160" x="60" y="60"/>
+      <circ-port dir="in" pin="170,240" x="60" y="100"/>
+      <circ-port dir="out" pin="670,200" x="120" y="80"/>
+      <circ-port dir="out" pin="670,360" x="70" y="50"/>
+      <circ-port dir="out" pin="670,400" x="100" y="60"/>
     </appear>
     <comp lib="0" loc="(170,160)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -6986,9 +6956,9 @@
       <rect fill="none" height="20" stroke="#000000" stroke-width="2" width="30" x="50" y="50"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="65" y="60">Z</text>
-      <circ-anchor facing="east" height="6" width="6" x="77" y="57"/>
-      <circ-port height="10" pin="420,110" width="10" x="75" y="55"/>
-      <circ-port height="8" pin="140,110" width="8" x="46" y="56"/>
+      <circ-anchor facing="east" x="80" y="60"/>
+      <circ-port dir="in" pin="140,110" x="50" y="60"/>
+      <circ-port dir="out" pin="420,110" x="80" y="60"/>
     </appear>
     <comp lib="0" loc="(140,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7046,16 +7016,16 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="49" y="84">a</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="87" y="46">b</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="88" y="86">ALU</text>
-      <circ-anchor facing="east" height="6" width="6" x="197" y="47"/>
-      <circ-port height="10" pin="630,160" width="10" x="195" y="175"/>
-      <circ-port height="10" pin="630,200" width="10" x="115" y="195"/>
-      <circ-port height="10" pin="630,50" width="10" x="195" y="135"/>
-      <circ-port height="10" pin="630,510" width="10" x="195" y="115"/>
-      <circ-port height="10" pin="630,90" width="10" x="195" y="155"/>
-      <circ-port height="8" pin="160,110" width="8" x="36" y="76"/>
-      <circ-port height="8" pin="160,150" width="8" x="86" y="26"/>
-      <circ-port height="8" pin="160,460" width="8" x="196" y="76"/>
-      <circ-port height="8" pin="160,680" width="8" x="196" y="46"/>
+      <circ-anchor facing="east" x="200" y="50"/>
+      <circ-port dir="in" pin="160,110" x="40" y="80"/>
+      <circ-port dir="in" pin="160,150" x="90" y="30"/>
+      <circ-port dir="in" pin="160,460" x="200" y="80"/>
+      <circ-port dir="in" pin="160,680" x="200" y="50"/>
+      <circ-port dir="out" pin="630,160" x="200" y="180"/>
+      <circ-port dir="out" pin="630,200" x="120" y="200"/>
+      <circ-port dir="out" pin="630,50" x="200" y="140"/>
+      <circ-port dir="out" pin="630,510" x="200" y="120"/>
+      <circ-port dir="out" pin="630,90" x="200" y="160"/>
     </appear>
     <comp lib="0" loc="(160,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7132,43 +7102,43 @@
     <comp lib="1" loc="(520,130)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="8" loc="(372,27)" name="Text">
+    <comp lib="8" loc="(370,25)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="The Arithmetic and Logic Unit"/>
     </comp>
-    <comp lib="8" loc="(685,339)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="010    SHL"/>
-    </comp>
-    <comp lib="8" loc="(685,393)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="101    OR"/>
-    </comp>
-    <comp lib="8" loc="(686,278)" name="Text">
+    <comp lib="8" loc="(685,275)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Instruction Set"/>
     </comp>
-    <comp lib="8" loc="(687,321)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="001    SHR"/>
-    </comp>
-    <comp lib="8" loc="(688,303)" name="Text">
+    <comp lib="8" loc="(685,300)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="000    ADD"/>
     </comp>
-    <comp lib="8" loc="(688,359)" name="Text">
+    <comp lib="8" loc="(685,320)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="001    SHR"/>
+    </comp>
+    <comp lib="8" loc="(685,335)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="010    SHL"/>
+    </comp>
+    <comp lib="8" loc="(685,355)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="011    NOT"/>
     </comp>
-    <comp lib="8" loc="(688,376)" name="Text">
+    <comp lib="8" loc="(685,375)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="100    AND"/>
     </comp>
-    <comp lib="8" loc="(688,412)" name="Text">
+    <comp lib="8" loc="(685,390)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="101    OR"/>
+    </comp>
+    <comp lib="8" loc="(685,410)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="110    XOR"/>
     </comp>
-    <comp lib="8" loc="(722,429)" name="Text">
+    <comp lib="8" loc="(720,425)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="111    CMP - compare"/>
     </comp>
@@ -7282,11 +7252,11 @@
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="287" y="76">clock enable</text>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="272" y="94">C</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="180" y="94">CLOCK</text>
-      <circ-anchor facing="east" height="6" width="6" x="287" y="87"/>
-      <circ-port height="10" pin="470,130" width="10" x="105" y="55"/>
-      <circ-port height="10" pin="470,170" width="10" x="245" y="55"/>
-      <circ-port height="10" pin="470,90" width="10" x="175" y="55"/>
-      <circ-port height="8" pin="140,150" width="8" x="286" y="86"/>
+      <circ-anchor facing="east" x="290" y="90"/>
+      <circ-port dir="in" pin="140,150" x="290" y="90"/>
+      <circ-port dir="out" pin="470,130" x="110" y="60"/>
+      <circ-port dir="out" pin="470,170" x="250" y="60"/>
+      <circ-port dir="out" pin="470,90" x="180" y="60"/>
     </appear>
     <comp lib="0" loc="(140,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7346,10 +7316,10 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="110" y="85">output</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="116" y="49">input</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="start" x="153" y="69">set</text>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="67"/>
-      <circ-port height="10" pin="290,340" width="10" x="125" y="95"/>
-      <circ-port height="8" pin="240,70" width="8" x="126" y="36"/>
-      <circ-port height="8" pin="580,160" width="8" x="176" y="66"/>
+      <circ-anchor facing="east" x="180" y="70"/>
+      <circ-port dir="in" pin="240,70" x="130" y="40"/>
+      <circ-port dir="in" pin="580,160" x="180" y="70"/>
+      <circ-port dir="out" pin="290,340" x="130" y="100"/>
     </appear>
     <comp lib="0" loc="(240,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7490,14 +7460,14 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="210" y="65">5</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="65">0</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="65">1</text>
-      <circ-anchor facing="east" height="6" width="6" x="227" y="67"/>
-      <circ-port height="10" pin="240,120" width="10" x="55" y="75"/>
-      <circ-port height="10" pin="330,120" width="10" x="85" y="75"/>
-      <circ-port height="10" pin="410,120" width="10" x="115" y="75"/>
-      <circ-port height="10" pin="490,120" width="10" x="145" y="75"/>
-      <circ-port height="10" pin="570,120" width="10" x="175" y="75"/>
-      <circ-port height="10" pin="650,120" width="10" x="205" y="75"/>
-      <circ-port height="8" pin="150,280" width="8" x="36" y="46"/>
+      <circ-anchor facing="east" x="230" y="70"/>
+      <circ-port dir="in" pin="150,280" x="40" y="50"/>
+      <circ-port dir="out" pin="240,120" x="60" y="80"/>
+      <circ-port dir="out" pin="330,120" x="90" y="80"/>
+      <circ-port dir="out" pin="410,120" x="120" y="80"/>
+      <circ-port dir="out" pin="490,120" x="150" y="80"/>
+      <circ-port dir="out" pin="570,120" x="180" y="80"/>
+      <circ-port dir="out" pin="650,120" x="210" y="80"/>
     </appear>
     <comp lib="0" loc="(150,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -7937,27 +7907,27 @@
     <comp lib="1" loc="(440,730)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="8" loc="(422,378)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="010    SHL"/>
-    </comp>
-    <comp lib="8" loc="(422,432)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="101    OR"/>
-    </comp>
-    <comp lib="8" loc="(423,317)" name="Text">
+    <comp lib="8" loc="(420,315)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Instruction Set"/>
     </comp>
-    <comp lib="8" loc="(424,360)" name="Text">
+    <comp lib="8" loc="(420,360)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="001    SHR"/>
     </comp>
-    <comp lib="8" loc="(425,342)" name="Text">
+    <comp lib="8" loc="(420,375)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="010    SHL"/>
+    </comp>
+    <comp lib="8" loc="(420,430)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="101    OR"/>
+    </comp>
+    <comp lib="8" loc="(425,340)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="000    ADD"/>
     </comp>
-    <comp lib="8" loc="(425,398)" name="Text">
+    <comp lib="8" loc="(425,395)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="011    NOT"/>
     </comp>
@@ -7965,15 +7935,15 @@
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="100    AND"/>
     </comp>
-    <comp lib="8" loc="(425,451)" name="Text">
+    <comp lib="8" loc="(425,450)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="110    XOR"/>
     </comp>
-    <comp lib="8" loc="(459,468)" name="Text">
+    <comp lib="8" loc="(455,465)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="111    CMP - compare"/>
     </comp>
-    <comp lib="8" loc="(615,319)" name="Text">
+    <comp lib="8" loc="(615,315)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="NOTE: ONLY first 16 bytes available in RAM"/>
     </comp>
@@ -8462,43 +8432,43 @@
     <comp lib="1" loc="(340,550)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="8" loc="(296,273)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="010    SHL"/>
-    </comp>
-    <comp lib="8" loc="(296,327)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="101    OR"/>
-    </comp>
-    <comp lib="8" loc="(297,212)" name="Text">
+    <comp lib="8" loc="(295,210)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Instruction Set"/>
     </comp>
-    <comp lib="8" loc="(298,255)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="001    SHR"/>
-    </comp>
-    <comp lib="8" loc="(299,237)" name="Text">
+    <comp lib="8" loc="(295,235)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="000    ADD"/>
     </comp>
-    <comp lib="8" loc="(299,293)" name="Text">
+    <comp lib="8" loc="(295,255)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="001    SHR"/>
+    </comp>
+    <comp lib="8" loc="(295,270)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="010    SHL"/>
+    </comp>
+    <comp lib="8" loc="(295,290)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="011    NOT"/>
     </comp>
-    <comp lib="8" loc="(299,310)" name="Text">
+    <comp lib="8" loc="(295,310)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="100    AND"/>
     </comp>
-    <comp lib="8" loc="(299,346)" name="Text">
+    <comp lib="8" loc="(295,325)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="101    OR"/>
+    </comp>
+    <comp lib="8" loc="(295,345)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="110    XOR"/>
     </comp>
-    <comp lib="8" loc="(333,363)" name="Text">
+    <comp lib="8" loc="(330,360)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="111    CMP - compare"/>
     </comp>
-    <comp lib="8" loc="(687,202)" name="Text">
+    <comp lib="8" loc="(685,200)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="NOTE: ONLY first 16 bytes available in RAM"/>
     </comp>
@@ -8573,6 +8543,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="control_section_add"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(490,440)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -8601,6 +8572,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="shift_register"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(150,180)" name="Clock"/>
     <comp lib="0" loc="(160,340)" name="Clock"/>
     <comp lib="0" loc="(170,140)" name="Pin">
@@ -8659,6 +8631,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="cpu_alt"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(100,400)" name="Probe">
       <a name="appearance" val="NewPins"/>
       <a name="radix" val="16"/>
@@ -8805,43 +8778,43 @@
     <comp lib="4" loc="(240,20)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(296,273)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="010    SHL"/>
-    </comp>
-    <comp lib="8" loc="(296,327)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="101    OR"/>
-    </comp>
-    <comp lib="8" loc="(297,212)" name="Text">
+    <comp lib="8" loc="(295,210)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Instruction Set"/>
     </comp>
-    <comp lib="8" loc="(298,255)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="001    SHR"/>
-    </comp>
-    <comp lib="8" loc="(299,237)" name="Text">
+    <comp lib="8" loc="(295,235)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="000    ADD"/>
     </comp>
-    <comp lib="8" loc="(299,293)" name="Text">
+    <comp lib="8" loc="(295,255)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="001    SHR"/>
+    </comp>
+    <comp lib="8" loc="(295,270)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="010    SHL"/>
+    </comp>
+    <comp lib="8" loc="(295,290)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="011    NOT"/>
     </comp>
-    <comp lib="8" loc="(299,310)" name="Text">
+    <comp lib="8" loc="(295,310)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="100    AND"/>
     </comp>
-    <comp lib="8" loc="(299,346)" name="Text">
+    <comp lib="8" loc="(295,325)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="101    OR"/>
+    </comp>
+    <comp lib="8" loc="(295,345)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="110    XOR"/>
     </comp>
-    <comp lib="8" loc="(333,363)" name="Text">
+    <comp lib="8" loc="(330,360)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="111    CMP - compare"/>
     </comp>
-    <comp lib="8" loc="(687,202)" name="Text">
+    <comp lib="8" loc="(685,200)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="NOTE: ONLY first 16 bytes available in RAM"/>
     </comp>
